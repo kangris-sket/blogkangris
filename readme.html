@@ -1,0 +1,45 @@
+<html>
+<body>
+<div class="post-body entry-content float-container" id="post-body-8817999181345742127"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Kami selalu siap untuk tantangan baru. </font><font style="vertical-align: inherit;">Yang ini ditujukan kepada kami oleh&nbsp; </font></font><a class="g-profile" href="http://plus.google.com/115167663491599068121" target="_blank" data-gapiscan="true" data-onload="true" data-gapiattached="true"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+ Ben Morrell</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &nbsp;yang ingin mengubah </font></font><a href="http://www.802heaven.com/" rel="nofollow" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">blognya</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> menjadi sebuah buku, atau lebih tepatnya dokumen Word yang bisa diedit sebelum dikirim ke printer. </font><font style="vertical-align: inherit;">Tentu, dia bisa saja pergi dan menyalin / menyisipkan setiap posting blog ke Word, tetapi blognya dimulai pada tahun 2002, setelah lebih dari 10 tahun posting blog. </font></font><br>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Namun kami berhasil membuat proses transformasi ini menggunakan alat yang mungkin dimiliki semua blogger.</font></font><br>
+<a name="more"></a><br>
+<b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Langkah 1: Mendapatkan ekspor konten blog Anda</font></font></b><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+Cara terbaik untuk mendapatkan semua konten Anda dari Blogger adalah dengan menggunakan situs yang disebut </font></font><a href="http://www.dataliberation.org/home" rel="nofollow" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Front Pembebasan Data</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">DL adalah tim teknisi di dalam Google yang tujuannya adalah untuk memudahkan pengguna memindahkan data mereka keluar masuk Produk Google (jadi aman!). </font></font><a href="https://www.google.com/takeout/#custom:blogger" rel="nofollow" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buka di sini</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> untuk mengambil konten Anda dari salah satu blog Anda (dengan mengklik Konfigurasi kemudian Buat Arsip). </font><font style="vertical-align: inherit;">Anda akan menerima file ZIP dari ekspor ini yang berisi file di dalamnya seperti YourBlog.atom. </font></font><br>
+<br>
+<b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Langkah 2: Ubah nama file</font></font></b><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+Buka </font><b><font style="vertical-align: inherit;">file</font></b><font style="vertical-align: inherit;"> ZIP dan seret file YourBlog.atom ke folder di desktop Anda. </font><font style="vertical-align: inherit;">Ubah nama file dari YourBlog.atom ke YourBlog.xml </font></font><br>
+<br>
+<b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Langkah 3: Unduh lembar gaya dan</font></font></b><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+Unduh </font><b><font style="vertical-align: inherit;">Template xsl</font></b></font><a href="https://www.dropbox.com/s/z0e95c3c089ribr/style.css" rel="nofollow" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lembar gaya ini</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> dan </font></font><a href="https://www.dropbox.com/s/15nncww2zp2spdv/transform.xsl" rel="nofollow" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">template XSL ini</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> dan simpan di direktori yang sama dengan file YourBlog.xml Anda yang baru. </font></font><br>
+<br>
+<b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Langkah 4: Edit satu baris dalam file XML di editor teks</font></font></b><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+Buka file XML di editor teks dan ubah: </font></font><br>
+<span style="font-family: Courier New, Courier, monospace; font-size: x-small;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;? Xml-stylesheet href = "http://www.blogger.com/styles/atom.css" jenis = "text / css"?&gt;</font></font></span><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+menjadi </font></font><br>
+<span style="font-family: Courier New, Courier, monospace; font-size: x-small;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;? xml-stylesheet href = "transform.xsl" type = "text / xsl"?&gt; </font></font></span><br>
+<br>
+<b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Langkah 5: Seret file XML ke browser Safari atau Internet Explorer</font></font></b><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+Ya, browser Safari atau browser Internet Explorer. </font><font style="vertical-align: inherit;">Chrome dan Firefox mungkin mencoba menerapkan gaya bawaan mereka sendiri ke file XML, sehingga berfungsi di dua browser lainnya. </font></font><br>
+<br>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+File XSL yang telah kami siapkan untuk melakukan transformasi berikut:</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+&lt;h1&gt; Judul </font><font style="vertical-align: inherit;">
+postingan </font><font style="vertical-align: inherit;">&lt;/ h1&gt; </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+&lt;h2&gt; Penulis </font><font style="vertical-align: inherit;">postingan </font><font style="vertical-align: inherit;">&lt;/ h2&gt; </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+&lt;h3&gt; Tanggal posting &lt;/ h3&gt; </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Konten posting blog </font></font><br>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Ini melakukan ini dalam urutan terbalik, jadi pesan ini beralih dari pos Lama ke Terbaru. </font><font style="vertical-align: inherit;">Jika Anda mau, Anda dapat mengubah ini menjadi naik dalam file XSL, dan Anda dapat menambahkan lebih banyak ke file XSL jika Anda ingin memasukkan komentar, tetapi kami menganggap ini cukup untuk sebagian besar. </font><font style="vertical-align: inherit;">Ini juga akan memuat gambar eksternal untuk posting blog. </font></font><br>
+<br>
+<br>
+<b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Langkah 6: Pilih semua dan copy paste ke Word</font></font></b><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+Ini mungkin agak sulit tergantung pada seberapa besar blog Anda, tetapi kami mampu melakukan arsip blog 12 meg dengan mudah. </font><font style="vertical-align: inherit;">Cukup pilih semua, salin, kemudian buka dokumen Word baru dan tekan tempel. </font><font style="vertical-align: inherit;">Anda mungkin perlu menunggu sebentar, tetapi itu akan berhasil. </font></font><br>
+<br>
+<b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Langkah 7: Simpan dokumen Word</font></font></b><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Simpan dokumen sebelum Anda mulai mengerjakannya! </font><font style="vertical-align: inherit;">Setelah disimpan, Anda dapat mengedit isi hati Anda, mengubah ukuran gambar, memindahkannya, memformat ulang ... semuanya. </font><font style="vertical-align: inherit;">Tautan dan gambar semuanya diawetkan serta banyak formatnya. </font></font><br>
+<br>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Dan itu dia! </font><font style="vertical-align: inherit;">Jika Anda memiliki pertanyaan, silakan tinggalkan komentar di bawah ini!
+</font></font></div>
+</body></html>
